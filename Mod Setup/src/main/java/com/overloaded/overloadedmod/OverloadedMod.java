@@ -19,6 +19,7 @@ public class OverloadedMod
     public void preInit(FMLPreInitializationEvent event) {
 
         ModItems.init();
+        ModTools.init();
 
     }
 
