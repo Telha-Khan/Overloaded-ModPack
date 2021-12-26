@@ -1,5 +1,6 @@
 package com.overloaded.overloadedmod;
 
+import com.overloaded.overloadedmod.entities.EntityFallenSamurai;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -19,6 +20,12 @@ public class OverloadedMod
     public void preInit(FMLPreInitializationEvent event) {
 
         ModItems.init();
+<<<<<<< Updated upstream
+=======
+        ModTools.init();
+        ModMobs.init();
+        ModFood.init();
+>>>>>>> Stashed changes
 
     }
 
