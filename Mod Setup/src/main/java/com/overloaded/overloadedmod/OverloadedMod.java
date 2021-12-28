@@ -20,12 +20,9 @@ public class OverloadedMod
     public void preInit(FMLPreInitializationEvent event) {
 
         ModItems.init();
-<<<<<<< Updated upstream
-=======
         ModTools.init();
         ModMobs.init();
         ModFood.init();
->>>>>>> Stashed changes
 
     }
 
