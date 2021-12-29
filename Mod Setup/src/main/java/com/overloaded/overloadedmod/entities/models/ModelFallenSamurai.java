@@ -2,7 +2,11 @@ package com.overloaded.overloadedmod.entities.models;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
+import net.minecraft.client.model.ModelSkeleton;
+import net.minecraft.client.model.ModelZombie;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.MathHelper;
 
 /**
  * ModelFallenSamurai - CrispyTrauma
@@ -67,7 +71,8 @@ public class ModelFallenSamurai extends ModelBase {
     }
 
     @Override
-    public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) { 
+    public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+        setRotationAngles(f, f1, f2, f3, f4, f5, entity);
         this.body.render(f5);
         this.jacket.render(f5);
         this.leftArm.render(f5);
@@ -82,9 +87,26 @@ public class ModelFallenSamurai extends ModelBase {
         this.leftLegPants.render(f5);
     }
 
+    public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity entity)
+    {
+
+        super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
+        this.leftArm.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
+        this.leftArmSleeve.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
+        this.rightArm.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
+        this.rightArmSleeve.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
+        this.leftLeg.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.0F * f1 * 0.5F;
+        this.leftLegPants.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.0F * f1 * 0.5F;
+        this.rightLeg.rotateAngleX = MathHelper.cos(f * 0.6662F) * 2.0F * f1 * 0.5F;
+        this.rightLegPants.rotateAngleX = MathHelper.cos(f * 0.6662F) * 2.0F * f1 * 0.5F;
+
+    }
+
+
     public void setRotateAngle(ModelRenderer modelRenderer, float x, float y, float z) {
         modelRenderer.rotateAngleX = x;
         modelRenderer.rotateAngleY = y;
         modelRenderer.rotateAngleZ = z;
     }
 }
+
