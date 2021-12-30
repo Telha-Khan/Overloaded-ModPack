@@ -87,23 +87,16 @@ public class ModelDemonWizard extends ModelBase {
     public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity entity) {
 
         super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
-        this.head.rotateAngleY = f3 / (180F / (float)Math.PI);
-        this.hat.rotateAngleY = f3 / (180F / (float)Math.PI);
-        this.head.rotateAngleX = f4 / (180F / (float)Math.PI);
-        this.hat.rotateAngleX = f4 / (180F / (float)Math.PI);
-        this.rightArm.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 2.0F * f1 * 0.5F;
-        this.rightArmSleeve.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 2.0F * f1 * 0.5F;
-        this.leftArm.rotateAngleX = MathHelper.cos(f * 0.6662F) * 2.0F * f1 * 0.5F;
-        this.leftArmSleeve.rotateAngleX = MathHelper.cos(f * 0.6662F) * 2.0F * f1 * 0.5F;
-        this.rightLeg.rotateAngleX = MathHelper.cos(f * 0.6662F) * 1.4F * f1;
-        this.rightLegPants.rotateAngleX = MathHelper.cos(f * 0.6662F) * 1.4F * f1;
-        this.leftLeg.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.4F * f1;
-        this.leftLegPants.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.4F * f1;
+        this.leftArm.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.3F * f1;
+        this.leftArmSleeve.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.3F * f1;
+        this.rightArm.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.3F * f1;
+        this.rightArmSleeve.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.3F * f1;
+        this.leftLeg.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.0F * f1 * 0.5F;
+        this.leftLegPants.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.0F * f1 * 0.5F;
+        this.rightLeg.rotateAngleX = MathHelper.cos(f * 0.6662F) * 2.0F * f1 * 0.5F;
+        this.rightLegPants.rotateAngleX = MathHelper.cos(f * 0.6662F) * 2.0F * f1 * 0.5F;
     }
 
-    /**
-     * This is a helper function from Tabula to set the rotation of model parts
-     */
     public void setRotateAngle(ModelRenderer modelRenderer, float x, float y, float z) {
         modelRenderer.rotateAngleX = x;
         modelRenderer.rotateAngleY = y;
