@@ -13,7 +13,7 @@ public class EntityDemonWizard {
     }
 
     public static void registerEntity() {
-        createEntity(EntityDemonWizardMob.class, "Demon King", 0xEC4545, 0X001EFF);
+        createEntity(EntityDemonWizardMob.class, "Demon Wizard", 0xEC4545, 0X001EFF);
     }
 
     public static void createEntity(Class entityClass, String entityName, int solidColor, int spotColor) {
