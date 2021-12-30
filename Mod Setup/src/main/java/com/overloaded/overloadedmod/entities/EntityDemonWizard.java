@@ -22,7 +22,7 @@ public class EntityDemonWizard {
         int randomId = EntityRegistry.findGlobalUniqueEntityId();
         EntityRegistry.registerGlobalEntityID(entityClass, entityName, randomId);
         EntityRegistry.registerModEntity(entityClass, entityName, randomId, OverloadedMod.instance, 64, 1, true);
-        EntityRegistry.addSpawn(entityClass, 0, 0, 5, EnumCreatureType.creature, BiomeGenBase.hell);
+        EntityRegistry.addSpawn(entityClass, 0, 0, 5, EnumCreatureType.creature, BiomeGenBase.extremeHillsPlus);
 
         createEgg(randomId, solidColor, spotColor);
     }

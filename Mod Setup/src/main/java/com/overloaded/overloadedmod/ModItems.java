@@ -18,7 +18,6 @@ public class ModItems {
           Item antimatter = new Item().setUnlocalizedName("antimatter").setTextureName(OverloadedMod.MODID + ":antimatter").setCreativeTab(CreativeTabs.tabMaterials);
         GameRegistry.registerItem(antimatter, antimatter.getUnlocalizedName());
 
-
     }
 
 }
