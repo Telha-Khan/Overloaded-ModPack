@@ -95,19 +95,10 @@ public class ModelDemonWizard extends ModelBase {
         this.rightArmSleeve.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 2.0F * f1 * 0.5F;
         this.leftArm.rotateAngleX = MathHelper.cos(f * 0.6662F) * 2.0F * f1 * 0.5F;
         this.leftArmSleeve.rotateAngleX = MathHelper.cos(f * 0.6662F) * 2.0F * f1 * 0.5F;
-        this.rightArm.rotateAngleZ = 0.0F;
-        this.rightArmSleeve.rotateAngleZ = 0.0F;
-        this.leftArm.rotateAngleZ = 0.0F;
-        this.leftArmSleeve.rotateAngleZ = 0.0F;
         this.rightLeg.rotateAngleX = MathHelper.cos(f * 0.6662F) * 1.4F * f1;
         this.rightLegPants.rotateAngleX = MathHelper.cos(f * 0.6662F) * 1.4F * f1;
         this.leftLeg.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.4F * f1;
         this.leftLegPants.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.4F * f1;
-        this.rightLeg.rotateAngleY = 0.0F;
-        this.rightLegPants.rotateAngleY = 0.0F;
-        this.leftLeg.rotateAngleY = 0.0F;
-        this.leftLegPants.rotateAngleY = 0.0F;
-
     }
 
     /**
