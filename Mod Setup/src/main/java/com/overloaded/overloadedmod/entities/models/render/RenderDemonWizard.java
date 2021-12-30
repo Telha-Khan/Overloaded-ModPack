@@ -5,11 +5,11 @@ import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 
-public class RenderFallenSamurai extends RenderLiving{
+public class RenderDemonWizard extends RenderLiving {
 
-    private static final ResourceLocation mobTextures = new ResourceLocation( "overloaded:textures/entities/fallen_samurai.png");
+    private static final ResourceLocation mobTextures = new ResourceLocation("overloaded:textures/entities/demon_wizard.png");
 
-    public RenderFallenSamurai(ModelBase par1ModelBase, float par2) {
+    public RenderDemonWizard(ModelBase par1ModelBase, float par2) {
 
         super(par1ModelBase, par2);
     }

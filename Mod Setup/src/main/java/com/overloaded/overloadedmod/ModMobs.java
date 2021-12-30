@@ -1,5 +1,6 @@
 package com.overloaded.overloadedmod;
 
+import com.overloaded.overloadedmod.entities.EntityDemonWizard;
 import com.overloaded.overloadedmod.entities.EntityFallenSamurai;
 import com.overloaded.overloadedmod.entities.EntityFallenSamuraiMob;
 import com.overloaded.overloadedmod.entities.models.ModelFallenSamurai;
@@ -12,6 +13,9 @@ public class ModMobs {
 
         EntityFallenSamurai.mainRegistry();
         RenderingRegistry.registerEntityRenderingHandler(EntityFallenSamuraiMob.class, new RenderFallenSamurai(new ModelFallenSamurai(), 0));
+
+        EntityDemonWizard.mainRegistry();
+
 
     }
 

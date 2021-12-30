@@ -5,14 +5,14 @@ import net.minecraft.entity.ai.*;
 import net.minecraft.entity.boss.BossStatus;
 import net.minecraft.entity.boss.IBossDisplayData;
 import net.minecraft.entity.monster.EntityMob;
-import net.minecraft.entity.monster.EntityZombie;
+import net.minecraft.entity.monster.EntityWitch;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 
-public class EntityFallenSamuraiMob extends EntityMob implements IBossDisplayData {
+public class EntityDemonKingMob extends EntityMob implements IBossDisplayData {
 
 
-    public EntityFallenSamuraiMob(World world) {
+public EntityDemonKingMob(World world) {
 
         super(world);
 
@@ -38,10 +38,10 @@ public class EntityFallenSamuraiMob extends EntityMob implements IBossDisplayDat
         super.applyEntityAttributes();
 
         this.getEntityAttribute(SharedMonsterAttributes.followRange).setBaseValue(130.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(0.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(1.0D);
         this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(1000.0D);
         this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(.5D);
         this.getEntityAttribute(SharedMonsterAttributes.knockbackResistance).setBaseValue(.6D);
     }
-
+    
 }

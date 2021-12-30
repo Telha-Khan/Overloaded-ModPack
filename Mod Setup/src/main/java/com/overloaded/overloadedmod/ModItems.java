@@ -13,6 +13,12 @@ public class ModItems {
         GameRegistry.registerItem(hellstone, hellstone.getUnlocalizedName());
         Item hellstone_dust = new Item().setUnlocalizedName("hellstone_dust").setTextureName(OverloadedMod.MODID + ":hellstone_dust").setCreativeTab(CreativeTabs.tabMaterials);
         GameRegistry.registerItem(hellstone_dust, hellstone_dust.getUnlocalizedName());
+        
+        //AntiMatter
+          Item antimatter = new Item().setUnlocalizedName("antimatter").setTextureName(OverloadedMod.MODID + ":antimatter").setCreativeTab(CreativeTabs.tabMaterials);
+        GameRegistry.registerItem(antimatter, antimatter.getUnlocalizedName());
+
+
     }
 
 }
