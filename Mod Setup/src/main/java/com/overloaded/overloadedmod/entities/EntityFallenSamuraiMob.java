@@ -37,7 +37,7 @@ public class EntityFallenSamuraiMob extends EntityMob implements IBossDisplayDat
 
         super.applyEntityAttributes();
 
-        this.getEntityAttribute(SharedMonsterAttributes.followRange).setBaseValue(130.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.followRange).setBaseValue(60.0D);
         this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(0.0D);
         this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(1000.0D);
         this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(.5D);

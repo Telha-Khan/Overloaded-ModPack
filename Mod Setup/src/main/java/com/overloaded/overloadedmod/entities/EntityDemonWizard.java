@@ -4,8 +4,6 @@ import com.overloaded.overloadedmod.OverloadedMod;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import net.minecraft.entity.EntityList;
 import net.minecraft.entity.EnumCreatureType;
-import net.minecraft.entity.monster.EntityMob;
-import net.minecraft.world.World;
 import net.minecraft.world.biome.BiomeGenBase;
 
 public class EntityDemonWizard {
@@ -15,7 +13,7 @@ public class EntityDemonWizard {
     }
 
     public static void registerEntity() {
-        createEntity(EntityDemonKingMob.class, "Demon King", 0xEC4545, 0X001EFF);
+        createEntity(EntityDemonWizardMob.class, "Demon King", 0xEC4545, 0X001EFF);
     }
 
     public static void createEntity(Class entityClass, String entityName, int solidColor, int spotColor) {
